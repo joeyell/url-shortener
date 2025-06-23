@@ -33,11 +33,11 @@ jobs:
         with:
           inlineScript: |
             #!/bin/bash
-            az group create --name ${{ secrets.RESOURCE_GROUP_NAME }} --location ${{ secrets.RESOURCE_GROUP_LOCATION }}
+            az group create --name ${{ vars.RESOURCE_GROUP_NAME }} --location ${{ vars.RESOURCE_GROUP_LOCATION }}
             echo "Azure resource group created successfully."
       
       - name: Deploy
         uses: azure/arm-deploy@v2
         with:
-          resourceGroupName: ${{ secrets.RESOURCE_GROUP_NAME }}
+          resourceGroupName: ${{ vars.RESOURCE_GROUP_NAME }}
           template: ./infrastructure/main.bicep
