@@ -7,7 +7,7 @@ module keyVault 'modules/secrets/keyvault.bicep' = {
   params: {
     location: location
     vaultName: 'kv-${uniqueId}' 
-}
+  }
 }
 
 module apiService 'modules/compute/appservice.bicep' = {
