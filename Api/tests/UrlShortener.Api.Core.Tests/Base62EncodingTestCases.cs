@@ -10,7 +10,7 @@ public class Base62EncodingTestCases
     [InlineData(20, "K")]
     [InlineData(8317141, "YtfR")]
     [InlineData(421124411, "SUzhD")]
-    public void WhenNumberGivenEncodeToBase62(int number, string expected)
+    public void WhenNumberGivenEncodeToBase62(long number, string expected)
     {
         number.EncodeToBase62()
             .Should()
