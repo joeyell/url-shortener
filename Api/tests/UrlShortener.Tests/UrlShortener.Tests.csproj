@@ -11,8 +11,8 @@
 
     <ItemGroup>
         <PackageReference Include="coverlet.collector" Version="6.0.0"/>
-        <PackageReference Include="FluentAssertions" Version="8.3.0" />
-        <PackageReference Include="Microsoft.Extensions.TimeProvider.Testing" Version="9.6.0" />
+        <PackageReference Include="FluentAssertions" Version="8.4.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.17" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0"/>
         <PackageReference Include="xunit" Version="2.5.3"/>
         <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3"/>
@@ -23,11 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\UrlShortener.Core\UrlShortener.Core.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Urls\Add\" />
+        <ProjectReference Include="..\..\src\UrlShortener.Api\UrlShortener.Api.csproj" />
     </ItemGroup>
 
 </Project>
