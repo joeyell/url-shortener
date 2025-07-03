@@ -6,4 +6,10 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Compile Update="Errors.cs">
+        <DependentUpon>Error.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
 </Project>

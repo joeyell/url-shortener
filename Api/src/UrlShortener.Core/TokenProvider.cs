@@ -2,7 +2,7 @@ namespace UrlShortener.Core;
 
 public class TokenProvider
 {
-    private TokenRange _tokenRange;
+    private TokenRange _tokenRange = null!;
     public void AssignRange(int start, int end)
     {
         _tokenRange = new TokenRange(start, end);

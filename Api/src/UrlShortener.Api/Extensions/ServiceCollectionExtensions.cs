@@ -16,8 +16,6 @@ public static class ServiceCollectionExtensions
             tokenProvider.AssignRange(1, 1000);
             return tokenProvider;
         });
-
-        services.AddScoped<IUrlDataStore, InMemoryUrlDataStore>();
         
         return services;
     }
